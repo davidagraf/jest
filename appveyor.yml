@@ -27,4 +27,4 @@ install:
 build: off
 test: off
 artifacts: 
-  - path: '.'
+  - path: ''
