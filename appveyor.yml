@@ -26,4 +26,14 @@ install:
 
 build: off
 test: off
-deploy: off
+deploy:
+  release: jest-v$(appveyor_build_version)
+  provider: GitHub
+  auth_token:
+    secure: %GITHUB_TOKEN% # your encrypted token from GitHub
+  artifact: /*/            # upload all NuGet packages to release assets
+  draft: true
+  prerelease: true
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
