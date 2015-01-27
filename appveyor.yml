@@ -30,7 +30,7 @@ deploy:
   release: jest-v$(appveyor_build_version)
   provider: GitHub
   auth_token:
-    secure: %GITHUB_TOKEN% # your encrypted token from GitHub
+    secure: $(GITHUB_TOKEN) # your encrypted token from GitHub
   artifact: /*/            # upload all NuGet packages to release assets
   draft: true
   prerelease: true
