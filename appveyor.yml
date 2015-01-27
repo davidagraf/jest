@@ -28,5 +28,5 @@ build: off
 test: off
 artifacts: 
   - path: '.'
-  - name: jest-win
+  - name: jest win
   - type: zip
