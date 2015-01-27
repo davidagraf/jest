@@ -27,4 +27,6 @@ install:
 build: off
 test: off
 artifacts: 
-  - path: '*'
+  - path: '.'
+  - name: jest-win
+  - type: zip
