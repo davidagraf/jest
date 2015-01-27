@@ -27,6 +27,6 @@ install:
 build: off
 test: off
 artifacts: 
-  - path: .
+  - path: node_modules\..
     name: jestForWindows
     type: zip
